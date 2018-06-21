@@ -59,11 +59,15 @@ class Owner
   end
 
   def list_pets
+<<<<<<< HEAD
     fish_count, dog_count, cat_count = 0
+=======
+>>>>>>> 441062ea6c84f1801f7d75b4b5fb648a4d9a6390
     self.pets.each {|type, pet|
       if type == :fishes
         fish_count = pet.count
       end
+<<<<<<< HEAD
       if type == :dogs
         dog_count = pet.count
       end
@@ -72,6 +76,16 @@ class Owner
       end
     }
     "I have #{fish_count} fish, #{dog_count} dog(s), and #{cat_count} cat(s)."
+=======
+      if type == dogs
+        dog_count = pet.count
+      end
+      if type == cats
+        cat_count = pet.count
+      end
+    }
+    puts "I have #{fish_count} fish, #{dog_count} dog(s), and #{cat_count} cat(s)."
+>>>>>>> 441062ea6c84f1801f7d75b4b5fb648a4d9a6390
   end
 
 end
